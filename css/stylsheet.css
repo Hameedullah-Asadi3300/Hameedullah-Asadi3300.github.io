@@ -1,0 +1,449 @@
+
+/* BODY */
+body {
+        margin: 0;
+        padding: 0;
+        resize: none;
+}
+/* THE END */
+
+
+/*HEADING 1 */
+h1 {
+    text-transform: uppercase;
+    font-family: serif, sans-serif;
+    text-align: center;
+    margin-top: 3%;
+    color: #ffd700;
+}
+/* THE END */
+
+
+/*H1 HOVER*/
+h1:hover {
+    filter: grayscale(10%);
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+/* THE END */
+
+
+/* PARAGRAPH ELEMENTS */
+#about_me {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding-left: 90px;
+    padding-right: 70px;
+    border: ridge #ffd700;
+    border-radius: 12px;
+    border-left: 20px;
+    border-width: thin;
+    box-sizing: border-box;
+}
+/* THE END */
+
+
+/* PARAGRAPH STYLING */
+p:hover {
+    transition: transform 1s;
+    transform: scale(1.01);
+}
+/* THE END */
+
+
+/* IMAGE STYLING */
+img {
+    filter:contrast(50%);
+    border-radius: 20px;
+    max-width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* THE END */
+
+
+
+/* MEDIA RULES */
+@media screen and (max-wdith: 576px) {
+    img {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+/* THE END */
+
+
+/* NAVBAR STYLING */
+.navbar {
+    padding-left: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    overflow: hidden;
+    background-color:#ffd700;
+    position:absolute;
+    word-spacing: 20px;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: moveNav 5s;
+    animation: moveNav 2s;  
+}
+/* THE END */
+
+
+/* moveNav ANIMATION */
+@keyframes moveNav {
+    from {left: -100vw;}
+    to {left:0vw}
+}
+/* THE END */
+
+
+/* NAVBAR LINKS */
+.navbar a {
+    float: left;
+    display: block;
+    color: black;
+    padding: 8px 8px;
+    text-decoration: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 5.75s;
+    animation: moveNavText 5.75s
+}
+/* THE END */
+
+/* moveNaxText ANIMATION EFFECTS FOR MOVING THE NAVBAR TEXT FROM ABOVE THE VIEW TO THE NAVBAR */
+@keyframes moveNavText {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+/* THE END */
+
+/* SCREENS 576px AND SMALLER WILL DISPLAY NAVBAR LINKS EQUALLY DISTRIBUTED */
+@media screen and (max-width: 576px) {
+    .navbar a{
+        width: 25%;
+        font-size: 12px;
+    }
+}
+/* THE END */
+
+
+/* NAVBAR HOVER EFFECTS */
+.navbar a:hover {
+    background-color: #000;
+    color: #ffd700;
+    font-weight: bold;
+    padding: 20px;
+    border-style:groove;
+}
+/* THE END */
+
+
+/* NAVBAR HOME BUTTON */
+.navbar a.active {
+    background-color: gray;
+}
+/* THE END */
+
+
+
+
+/* DESIGNING THE VIDEO */
+
+#video {   
+    opacity: 0.5;    
+    display: block;
+    margin: auto;
+    min-width: 100%;
+    height: 100%;
+}
+/* THE END */
+
+
+
+/* SCREENS THAT ARE 576px SMALLER WILL NOT DISPLAY THE BACKGROUND VIDEO */
+@media screen and (max-width: 576px) {
+    video {
+        display: none;
+    }
+}
+/* THE END */
+
+
+/* FIRST TEXT OVER THE VIDEO */
+.video_text {
+    color: #ffd700;
+    width: 30%;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    right: 50%;
+    padding: 12px;
+    -webkit-animation: moveVideoText 5.75s;
+    animation: moveVidoText 5.75s;
+    border-style: inset;
+    border-color:#000;
+}
+/* THE END */
+
+
+/* VIDEO SECOND MIDDLE TEXT */
+.video_button {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 12px;
+    border-width: 10px;
+    position: absolute;
+    padding: 2px;
+    top: 80%;
+    left: 50%;
+
+}
+
+.video_button h3:hover {
+    background-color: black;
+    color: #ffd700;
+}
+/* THE END */
+
+
+/* THIS ANIMATION EFFECT CAUSES THE OVERLAY VIDEO TEXT TO MOVE UP FROM THE BOTTOM OF THE PAGE UPON PAGE LOAD */
+@keyframes moveVideoText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+/* THE END */
+
+
+/* TABLE STYLING -  this section covers the styling of the columns and rows within the table */
+* {
+    box-sizing: border-box;
+}
+/* THE END */
+
+
+
+/* START OF COLUMN 1 DESIGN */
+.col1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 900px;
+    background-color: #ffff;
+}
+/* THE END */
+
+/* DESIGNING MY IMAGE IN COKUMN */
+.portrait {
+    position: relative;
+    padding-bottom: 10px;
+    height: auto;
+    object-fit: fill;
+}
+/* THE END */
+
+
+/* SCREEN 576px AND SMALLER WILL DISPLAY A SCROLL BAR IF THE TEXT OVERFLPW COLUMN HEIGHT */
+@media screen and (max-width: 576px) {
+    .col {
+        overflow: auto;
+    }
+}
+/* THE END */
+
+
+/* COLUMN 2 DESIGNING */
+.col2 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    padding-top: 1.9%;
+    padding-bottom:1.9%;
+    height: 600px;
+    background-color: #fff;
+}
+/* THE END */
+
+/* DESIGNING THT TITLE */
+.name {
+    color: #ffd700;
+    text-decoration: underline 1px solid black;
+    padding-top: 100px;
+    padding-left: 5px;
+}
+/*THE END */
+
+
+/* TABLE STYLING -  this section covers the styling of the columns and rows within the table */
+* {
+    box-sizing: border-box;
+}
+/* THE END */
+
+
+
+/* START OF COLUMN 3 DESIGN */
+.col3 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 20px;
+    height: 800px;
+    background-color: #ffff;
+    object-fit: fill;
+}
+/* THE END */
+
+/* DESIGNING IMAGE */
+.githubimage {
+    padding-top: 280px;
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: 0.5;
+}
+/* THE END */
+
+
+/* START OF COLUMN 4 DESIGN */
+.col4 {
+    float: left;
+    width: 50%;
+    padding-top: 0px;
+    height: 20px;
+    background-color: #ffff;
+    object-fit: fill;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.title {
+    position: relative;
+    top: -480px;
+    text-align:center;
+    color: #ffd700;
+    text-decoration: underline 1px solid black;
+    padding-left: 5px;
+    object-fit: fill;
+    margin-bottom: 0;
+    margin-top: -5px;
+}
+.text {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    position: relative;
+    top: -450px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding-top: 0;
+    padding-left: 90px;
+    padding-right: 70px;
+    border: ridge #ffd700;
+    border-radius: 12px;
+    border-right: 20px;
+    border-width: thin;
+    box-sizing: border-box;
+}
+/* THE END */
+
+
+
+/* DESIGNING CONTACT FORM */
+    input [type=text] {
+    display:inline;
+    width: 100%;
+    padding: 12px;
+    border: 1px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    resize: horizontal;
+    font-family: sans-serif;
+    }
+/* THE END */
+
+/* SUBMIT BUTTON */
+input[type=submit] {
+    background-color: black;
+    color: #ffd700;
+    font-weight: bold;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+}
+/* THE END */
+
+
+/* FORM ELEMENT */
+form {
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    font-family: sans-serif;
+}
+/* THE END */
+
+
+/* FOOTER STYLING */
+footer {
+    bottom:auto;
+    width: 100%;
+    padding: 5px;
+    padding-left: 30px;
+    margin-left: 0;
+    background-color: #ffd700;
+    
+}
+/* THE END */
+
+
+/* CENTRALIZING PART OF THE FOOTER */
+.center {
+    text-align: center;
+    padding-top: 5px;
+}
+/* THE END */
+
+
+/* COLORING THE LINKS */
+a {
+    color: blue;
+}
+/* THE END */
+
+
+
+ .connect h1 {
+    text-align: center;
+    padding: 0% 0%;
+
+ }
+
+
+/* SOCIAL MEDIA DESIGNING */
+.socialmedia {
+    padding: 2%;
+    margin-left: 5%;
+
+}
+
+
