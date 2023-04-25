@@ -1,6 +1,4 @@
 <!--START OF BOILERPLATE-->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,10 +43,62 @@
 </section>
 <!--START OF TEXT ON VIDEO-->                                 <!--HOME ENDED-->
 
+<!-- Slideshow section added -->
+<div id="Slideshow">
+    <div id="Slideshow_Background"> 
+        <div id="Slideshow_Container">
+            <!-- Slide 1 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="images/slide_1.png" alt="Computer coding">
+                <div class="text_2">Make me proud by joining to your projects.</div>
+            </div>
+            <!-- Slide 2 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="images/slide_2.png" alt="computer acreen"> 
+                <div class="text_2">I am a front-end developer working in web<br>development.</div>
+            </div>
+            <!-- Slide 3 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="images/slide_3.png" alt="HTML">
+                <div class="text_2">I am professional in HTML5.</div>
+            </div>
+            <!-- Slide 4 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="images/slide_4.png" alt="CSS">
+                <div class="text_2">Let me beautify your business looking online.</div>
+            </div>
+            <!-- Slide 5 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="images/slide_5.png" alt="React framework"> 
+                <div class="text_2">I have projects used react in.</div>
+            </div>
+            <!-- Slide 6 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="images/slide_6.png" alt="Calculation"> 
+                <div class="text_2"><a class="white-text contact" onclick="openForm()">Lets work together</a></div> 
+            </div>
+            <!-- Previous and next buttons -->
+            <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br> <!-- Adds a space between the slideshow images and the dots -->
+
+        <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+    </div>
+</div>
 
 
 
 
+<hr>
 <!--START OF ABOUT-->
 <section id="about">
     <div class="row">
@@ -84,7 +134,7 @@
 <section id="github">
     <div class="col3">
         <div class="githubimage">
-        <img src="images/github.png" alt="github wallpaper">
+        <img src="images/github.png" alt="github profile">
         </div> 
         </div>
 
@@ -110,9 +160,14 @@
 
 
 
+
+
+
+
+
 <!--START OF CONTACT SECTION-->
 <section id="contact">
-    <button onclick="openForm()" class="Pop_Up_Button">LETS CONNECT</button>
+    <button onclick="openForm()" class="btn_cancel_2">LETS CONNECT</button>
 <div class="connect">
         <form action="https://formspree.io/f/xbjepjke" method="post">
             <label>F/Name</label>
@@ -124,10 +179,19 @@
             <label>Message</label>
             <input type="text" id="Message" name="message" placholder="Write your message"></a>
             <input type="submit" Value="Submit">
-</form>
+            <button type="button" class="btn_cancel" onclick="closeForm()">Close</button>
+
+        </form>
 </div>
 </section>
 <!--END OF CONTACT SECTION-->       <!--CONTACT ENDED-->
+
+
+
+
+
+
+
 
 
 
